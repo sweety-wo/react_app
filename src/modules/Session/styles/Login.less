@@ -1,0 +1,62 @@
+@import '~uikit';
+/* ------------------------------------------------------------------------------
+ *
+ *  # Login and related forms
+ *
+ *  Styles related to user login - logins, registration, password revovery, unlock etc.
+ *
+ *  Version: 1.1
+ *  Latest update: Nov 25, 2015
+ *
+ * ---------------------------------------------------------------------------- */
+
+.Login {
+  // Login container
+  &-container {
+    display: table;
+    width: 100%;
+    height: 100%; // default height
+
+    // Make content full height
+    .page-content {
+      display: table-row;
+      height: 100%;
+    }
+
+    // Add fixed width
+    .login-form {
+      width: 320px;
+    }
+
+    // Add vertical margin
+    .login-form,
+    .registration-form {
+      margin: 0 auto @line-height-computed auto;
+
+      @media (max-width: @screen-xs) {
+        width: 100%;
+      }
+    }
+
+    // Align forms vertically
+    .content-wrapper {
+      vertical-align: middle;
+      display: table-cell; // dublicate to keep content always vertically centereed
+    }
+  }
+
+  // Responsive login options
+  @media (max-width: @screen-xs-max) {
+    &-options {
+      &,
+      .text-right {
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+
+
+

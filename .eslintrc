@@ -1,0 +1,15 @@
+{
+    "extends": "airbnb",
+    "parserOptions":  {
+        "ecmaFeatures": {
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "env": {
+        "browser": true,
+        "jest": true
+    },
+    "rules": {
+        "max-len": ["warn", 120, 2, {"ignoreUrls": true}]
+    }
+}

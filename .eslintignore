@@ -1,0 +1,3 @@
+build/**/*.{js,jsx,ts,coffee}
+dist/**/*.{js,jsx,ts,coffee}
+tools/**/*.js

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="application-name" content="{{htmlWebpackPlugin.options.applicationName}}">
+    <meta name="version" content="{{htmlWebpackPlugin.options.version}}">
+    <title>{{ htmlWebpackPlugin.options.title }}</title>
+    {{#if htmlWebpackPlugin.files.favicon}}
+        <link rel="shortcut icon" href="{{htmlWebpackPlugin.files.favicon}}">
+    {{/if}}
+
+    {{#each htmlWebpackPlugin.files.css}}
+        <link href="{{this}}" rel="stylesheet" />
+    {{/each}}
+</head>
+<body>
+{{#if htmlWebpackPlugin.options.appMountId}}
+    <div id="{{htmlWebpackPlugin.options.appMountId}}"></div>
+{{/if}}
+</body>
+</html>
